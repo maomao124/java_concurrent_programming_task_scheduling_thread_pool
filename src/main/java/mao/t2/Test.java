@@ -29,9 +29,10 @@ public class Test
 
     public static void main(String[] args)
     {
+        log.debug("开始运行");
         ScheduledExecutorService threadPool = Executors.newScheduledThreadPool(2);
 
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 3; i++)
         {
             int finalI = i;
             threadPool.schedule(new Runnable()
